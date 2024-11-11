@@ -26,16 +26,21 @@ public class XmlJsonUtil {
         return json.toString();
     }
 
+    // TODO: Este método serve para receber o XML e converter para JSON a massa de dados.
+    /*
+    As linhas foram comentadas, para não haver duplicidade no retorno, foram criadas
+    apenas para facilitar e ver o que o metodo esta fazendo.
+    */
     public static String xmlToJsonArray(XmlObject xmlObject) throws Exception {
 
         String xml = xmlObject.toString();
 
-        System.out.println(xml);
+//        System.out.println(xml);
 
         XMLSerializer ser = new XMLSerializer();
         JSONArray json = (JSONArray) ser.read(xml);
 
-        System.out.println(json);
+//        System.out.println(json);
 
         return json.toString();
     }
